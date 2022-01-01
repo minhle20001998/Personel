@@ -1,0 +1,100 @@
+.daily {
+  height: calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* calendar header */
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.react-calendar__navigation > button {
+  margin: 0 10px;
+}
+
+.react-calendar__navigation__label {
+  flex-grow: 0 !important;
+  padding: 20px 40px;
+  pointer-events: none;
+}
+
+.react-calendar__navigation__arrow {
+  padding: 0 40px;
+  font-size: 25px;
+}
+
+.react-calendar__navigation__label:hover,
+.react-calendar__navigation__arrow:hover {
+  background-color: #cfcdcd;
+}
+
+/* calendar body */
+
+.react-calendar__viewContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.react-calendar__month-view {
+  width: 1000px;
+}
+
+/* week name */
+
+.react-calendar__month-view__weekdays__weekday {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* days btn */
+
+.react-calendar__month-view__days > button {
+  height: 100px;
+}
+
+.react-calendar__month-view__days > button:hover {
+  background-color: #cfcdcd;
+}
+
+/* current day */
+.react-calendar__tile--now {
+  background-color: rgb(134, 134, 134);
+}
+
+.react-calendar__tile--now:hover {
+  background-color: rgb(134, 134, 134) !important;
+}
+
+/* next day of month */
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  background-color: #ffffff;
+  color: rgb(151, 149, 149);
+}
+
+/* daily notes */
+
+.daily-note {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  background-color: rgb(241, 241, 241);
+}
+
+.daily-notes-textarea {
+  max-height: 200px !important;
+  min-height: 100px !important;
+  border: 1px solid rgb(204, 204, 204) !important;
+  outline: none !important;
+}
+
+.daily-notes-textarea:focus {
+  box-shadow: none !important;
+}

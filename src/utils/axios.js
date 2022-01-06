@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 export const myAxios = axios.create({
-    baseURL: 'http://localhost:3030/api/v1',
+    baseURL: 'https://project-personel.herokuapp.com/api/v1',
     withCredentials: true
 });
 
